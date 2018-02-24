@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        'Laracasts\Utilities\JavaScript\JavaScriptServiceProvider',
 
         /*
          * Application Service Providers...

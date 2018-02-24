@@ -14,4 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/swapi', "SwapiController@view");
+Route::get('/planets', "SwapiController@get_planet");

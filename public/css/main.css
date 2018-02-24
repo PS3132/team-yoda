@@ -127,6 +127,10 @@ img {
     top: 29%;
 }
 
+.planet_unfold_image_container{
+  padding-bottom: 20px;
+}
+
 /*** Media queries for adjusting to different screen sizes ***/
 
 @media only screen and (max-width: 600px) {

@@ -47051,11 +47051,33 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            name: planet_name
+            name: planet_name,
+            diameter: planet_diameter,
+            rotation: planet_rotation,
+            period: planet_period,
+            gravity: planet_gravity,
+            population: planet_population,
+            climate: planet_climate,
+            terrain: planet_terrain,
+            water: planet_water,
+            image_url: 'img/' + planet_name + '.png'
         };
     },
 
@@ -47076,12 +47098,37 @@ var render = function() {
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-8" }, [
         _c("div", { staticClass: "card card-default" }, [
-          _c("div", { staticClass: "card-header" }, [_vm._v(_vm._s(_vm.name))]),
+          _c("div", { staticClass: "card-header" }, [
+            _c("h2", [_vm._v(_vm._s(_vm.name))])
+          ]),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
-            _vm._v(
-              "\n                    I'm an example component.\n                "
-            )
+            _c("div", { staticClass: "planet_unfold_image_container" }, [
+              _c("img", {
+                staticClass: "planet_unfold_image",
+                attrs: { src: _vm.image_url }
+              })
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("h2", [_vm._v("Details")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Diameter: " + _vm._s(_vm.diameter))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Rotation: " + _vm._s(_vm.rotation))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Orbital period: " + _vm._s(_vm.period))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Gravity: " + _vm._s(_vm.gravity) + " ")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Population: " + _vm._s(_vm.population))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Climate: " + _vm._s(_vm.climate))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Terrain: " + _vm._s(_vm.terrain))]),
+            _vm._v(" "),
+            _c("p", [_vm._v("Surface water: " + _vm._s(_vm.water))])
           ])
         ])
       ])

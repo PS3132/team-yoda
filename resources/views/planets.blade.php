@@ -19,8 +19,6 @@ $films = "placeholder";
         
     </div>
 
-    <h2>Films</h2>
-    {{$films}}
 
     <script src="{{ asset('js/app.js') }}"></script>
 @endsection
